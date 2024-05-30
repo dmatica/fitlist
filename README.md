@@ -5,3 +5,5 @@ A series of scripts to merge Apple Music data with Apple Fitness data
 [Step 1: Apple Music Merge](/Step1.md)
 <br>
 [Step 2: Apple Fitness Data Acquisition](/Step2.md)
+<br>
+[Step 3: Merging Apple Fitness and Apple Music data](/Step3.md)
