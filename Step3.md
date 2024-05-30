@@ -1,0 +1,3 @@
+# Step 3: Merging Apple Fitness and Apple Music data
+
+Now that we've been able to aggregate our AppleMusicTrackData files in Step 1 and Apple Fitness workout data in Step 2, we can now integrate these two sets of data. For this step, I've taken the approach of looking at each workout, and from the Heart Rate.csv file, for each timepoint there, it will scan the appropriate AppleMusicTrackData file to see if any tracks were playing at that time, and if so, it will add that TrackDescription information to a new column in the Heart Rate.csv file, and output as a new file, {Workout_Date_Timestamp}_tracks.csv.
