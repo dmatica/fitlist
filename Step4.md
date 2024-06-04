@@ -1,6 +1,6 @@
 # Step 4: Building the FitList Visualizer with Dash
 
-Now that the Apple Music track information is integrated with the heart rate timepoints in the {Workout_Date_Timestamp}_tracks.csv, we can visualize this information to get a more detailed version of the graphs that are output by the Apple Fitness app. This step uses the Dash python library to start up a Flask server to load in all of the data to generate the graphs.
+Now that the Apple Music track information is integrated with the heart rate timepoints in the {Workout_Date_Timestamp}_tracks.csv, we can visualize this information to get a more detailed version of the graphs that are output by the Apple Fitness app. This step uses the Dash python library to start up a Flask server to load in all of the data to generate the graphs. While this is running, we can connect to the dashboard with the following address: http://127.0.0.1:8050/.
 ﻿<p align="center">
  <img src='https://github.com/dmatica/fitlist/assets/4794041/66e2a859-edb4-4250-beef-acc0df5554b9'>
 </p>
