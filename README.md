@@ -2,6 +2,14 @@
 A series of scripts to merge Apple Music data with Apple Fitness data
 ![fitlistdemo](https://github.com/dmatica/fitlist/assets/4794041/eb9c6723-7656-4195-9cf9-6ed0bfc33667)
 
+[Step 1: Apple Music Merge](/Step1.md)
+<br>
+[Step 2: Apple Fitness Data Acquisition](/Step2.md)
+<br>
+[Step 3: Merging Apple Fitness and Apple Music data](/Step3.md)
+<br>
+[Step 4: Building the FitList Visualizer with Dash](/Step4.md)
+
 ## Introduction
 Across the different products and services within the Apple ecosystem, it can sometimes be shocking to see the lack of integration between products. One such gap I’ve noticed in my everyday life is the seeming lack of communication between Apple Music and Apple Fitness. As someone who is interested in finding patterns in my music listening behavior (https://github.com/dmatica/lastify), I was curious to see if I could merge my music listening history with the heart rate information from the workouts I record on my watch while at the gym, with the goal of identifying a trend between the type of music I listen to and how effective my workouts are.
 
@@ -19,12 +27,4 @@ For the scope of this project, I was studying the role that music plays on my el
 
 Apple does not currently provide a real-time solution for retrieving your music listening history, as the Apple Music API’s “Get Recently Played Tracks” call will only retrieve a maximum of 30 recently played tracks. In order to retrieve your full music listening history, you need to request  a copy of your data with Apple’s Privacy team (https://privacy.apple.com/).
 
-This request takes approximately one week. Afterwards you receive an email with a link to download the data. Once we have both the Apple Fitness data exported from Health Auto Export and the Apple Music data, we are able to proceed with the four steps below.
-
-[Step 1: Apple Music Merge](/Step1.md)
-<br>
-[Step 2: Apple Fitness Data Acquisition](/Step2.md)
-<br>
-[Step 3: Merging Apple Fitness and Apple Music data](/Step3.md)
-<br>
-[Step 4: Building the FitList Visualizer with Dash](/Step4.md)
+This request takes approximately one week. Afterwards you receive an email with a link to download the data. Once we have both the Apple Fitness data exported from Health Auto Export and the Apple Music data, we are able to proceed with the four steps listed at the top.
