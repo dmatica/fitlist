@@ -1,6 +1,6 @@
 # Step 1: Apple Music Merge
 
-Apple does not currently provide a real-time solution for retrieving your music listening history, as the Apple Music API’s “Get Recently Played Tracks” call will only retrieve a maximum of 30 recently played tracks. In order to retrieve your full music listening history, you need to request  a copy of your data with Apple’s Privacy team (https://privacy.apple.com/).
+Apple does not currently provide a real-time solution for retrieving your music listening history, as the Apple Music's API call “[Get Recently Played Tracks](https://developer.apple.com/documentation/applemusicapi/get_recently_played_tracks)” will only retrieve a maximum of 30 most recently played tracks. In order to retrieve your full music listening history, you need to request  a copy of your data with Apple’s Privacy team (https://privacy.apple.com/).
 
 ![Apple data request](https://github.com/dmatica/fitlist/assets/4794041/d08b3bd8-f9a6-4302-974b-ac982aeec266)
 
