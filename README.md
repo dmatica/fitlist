@@ -2,13 +2,13 @@
 A series of scripts to merge Apple Music data with Apple Fitness data
 ![fitlistdemo](https://github.com/dmatica/fitlist/assets/4794041/eb9c6723-7656-4195-9cf9-6ed0bfc33667)
 
-[Step 1: Apple Music Merge](/Step1/Readme.md)
+[Step 1: Apple Music Merge](/Step1/)
 <br>
-[Step 2: Apple Fitness Data Acquisition](/Step2/Readme.md)
+[Step 2: Apple Fitness Data Acquisition](/Step2/)
 <br>
-[Step 3: Merging Apple Fitness and Apple Music data](/Step3/Readme.md)
+[Step 3: Merging Apple Fitness and Apple Music data](/Step3/)
 <br>
-[Step 4: Building the FitList Visualizer with Dash](/Step4/Readme.md)
+[Step 4: Building the FitList Visualizer with Dash](/Step4/)
 
 ## Introduction
 Across the different products and services within the Apple ecosystem, it can sometimes be shocking to see the lack of integration between products. One such gap I’ve noticed in my everyday life is the seeming lack of communication between Apple Music and Apple Fitness. As someone who is interested in finding patterns in my music listening behavior (https://github.com/dmatica/lastify), I was curious to see if I could merge my music listening history with the heart rate information from the workouts I record on my watch while at the gym, with the goal of identifying a trend between the type of music I listen to and how effective my workouts are.
