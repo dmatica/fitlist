@@ -19,3 +19,4 @@ This first script grabs the corresponding ‘Track Description’ field from the
 - UTC Offset in Seconds
 - Track Description
 
+# How AppleMusicMerge.py works
