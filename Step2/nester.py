@@ -3,6 +3,9 @@ import shutil
 import re
 import calendar as calendar
 
+# Specify path to where the exported files from Health Auto Export are located:
+source_directory = "/Path/to/HealthAutoExport/Files"
+
 def extract_datetime(filename):
     # Define regular expression pattern to match date-time format
     pattern = r'(\d{4})(\d{2})(\d{2})_(\d{2})(\d{2})(\d{2})'
@@ -34,6 +37,4 @@ def organize_files(source_dir):
                 shutil.move(os.path.join(source_dir, filename), os.path.join(nested_dir, new_new_filename))
                 print(f"Moved {filename} to {nested_dir}")
 
-# Example usage:
-source_directory = "/Users/davindersandhu/PycharmProjects/Fitcheck/Data"
 organize_files(source_directory)
