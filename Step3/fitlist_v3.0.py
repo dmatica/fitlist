@@ -9,12 +9,12 @@ from datetime import datetime
 import pytz
 import re
 
-#root_folder='/Users/davindersandhu/Downloads/Auto Export/2023/July'
-root_folder = 'Data'
+root_folder = '/Path/to/Data/'
 workout = 'Elliptical'
-plt.style.use('default')
 desired_timezone = 'America/New_York'
-appleMusicDataPath = '/Users/davindersandhu/PycharmProjects/Fitcheck/'
+appleMusicDataPath = '/Path/to/AppleMusicDataFiles/'
+
+plt.style.use('default')
 
 folders=[]
 for root, dirs, files in os.walk(root_folder):
@@ -50,12 +50,6 @@ for file_name in os.listdir(folder_path):
             (df['Event End Timestamp'].notna())
             ].sort_values('Event Start Timestamp')
 
-#music_history_file = 'Apple Music track data.csv'
-#music_history_cols = ["Event End Timestamp","Event Start Timestamp","Track Description"]
-#df_music_history = pd.read_csv(music_history_file, usecols=music_history_cols, parse_dates=['Event Start Timestamp','Event End Timestamp'])
-#x = (df_music_history)
-##print(x)
-
 w_year=0
 for folder in folders:
     #GET YEAR OF FOLDER
@@ -82,8 +76,6 @@ for folder in folders:
     df_heart_rate['Track Description'] = ''
 
     # Filter out timestamps outside the range of [workout_start, workout_end]
-    # print(type(workout_start), type(workout_end))
-    # print(valid_timestamps.columns)
     wos = pd.to_datetime(workout_start)
     woe = pd.to_datetime(workout_end)
     #filtered_timestamps = valid_timestamps[w_year].loc[(valid_timestamps[w_year]['Event Start Timestamp'] >= wos) &(valid_timestamps[w_year]['Event Start Timestamp'] <= woe)]
