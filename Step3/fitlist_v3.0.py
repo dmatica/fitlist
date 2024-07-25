@@ -18,14 +18,12 @@ plt.style.use('default')
 
 folders=[]
 for root, dirs, files in os.walk(root_folder):
-    #print(dirs,files)
     for directory in dirs:
         if directory.startswith(workout):
             folder_path = os.path.join(root, directory)
-            #print(folder_path)
             folders.append(folder_path)
 folders.sort()
-print(folders)
+
 # Add track descriptions to appropriate heart rate data
 def track_add(df_heart_rate,x):
     for index, row in df_heart_rate.iterrows():
