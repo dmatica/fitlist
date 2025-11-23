@@ -1,4 +1,34 @@
 # FitList
+## Introducing FitList v1
+
+
+https://github.com/user-attachments/assets/948b61d1-38d1-466c-9b26-81252b17d0d8
+
+
+To improve on the visual experience of FitList, this next iteration has been rebuilt in SQL and Superset. The output files as previously described in Step 3 are generated as before, but a subsequent step has been taken to combine this data into a single workouts.db file, with the following tables and schemas:
+
+Table: workouts
+| Column | Type | Description|
+|:----|:-----|:------|
+| id | INTEGER | Workout number |
+| date | DATE | Date of workout |
+| workout_type | TEXT | Workout type |
+| notes | TEXT | Optional notes |
+
+Table: heart_rate_points
+| Column | Type | Description|
+|:-------|:------|:------|
+| id | INTEGER | Unique identifier |
+| workout_id | INTEGER | Foreign key to workouts(id) |
+| timestamp | DATETIME | Timestamp of heart rate |
+| heart_rate | NUMERIC | Average measured heart rate |
+| track_name | TEXT | track_description field |
+| artist | TEXT | Optional if available/parsed |
+
+Once imported into Superset, different chart types can be generated, and combined into a dashboard view that allows for navigating different workouts, and seeing aggregate metrics across all workouts. In the example dashboard above, the top layer contains the drop down menu to switch between workouts. Changing workouts here will update the two top charts in the dashboard (Heart Rate and Top Workout Tracks), however the bottom charts (Most Played Tracks - All time, Average heart rate per workout, and Workout minutes per month) remain unchanged.
+
+
+## v0 Introduction
 A series of scripts to merge Apple Music data with Apple Fitness data
 ![fitlistdemo](https://github.com/dmatica/fitlist/assets/4794041/eb9c6723-7656-4195-9cf9-6ed0bfc33667)
 
@@ -10,7 +40,6 @@ A series of scripts to merge Apple Music data with Apple Fitness data
 <br>
 [Step 4: Building the FitList Visualizer with Dash](/Step4/)
 
-## Introduction
 Across the different products and services within the Apple ecosystem, it can sometimes be shocking to see the lack of integration between products. One such gap I’ve noticed in my everyday life is the seeming lack of communication between Apple Music and Apple Fitness. As someone who is interested in finding patterns in my music listening behavior (https://github.com/dmatica/lastify), I was curious to see if I could merge my music listening history with the heart rate information from the workouts I record on my watch while at the gym, with the goal of identifying a trend between the type of music I listen to and how effective my workouts are.
 
 ## How Apple Fitness works
